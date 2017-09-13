@@ -26,7 +26,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="cVP-5D-aSd" kind="show" id="99b-O6-0h0"/>
+                                    <segue destination="B2M-2c-0Mf" kind="show" id="99b-O6-0h0"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -56,7 +56,7 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="-543.77811094452773"/>
         </scene>
-        <!--View Controller-->
+        <!--Item-->
         <scene sceneID="0dg-3n-YhQ">
             <objects>
                 <viewController id="cVP-5D-aSd" sceneMemberID="viewController">
@@ -69,10 +69,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="CE7-xd-bO0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ecU-7r-nof" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="967" y="-537"/>
+            <point key="canvasLocation" x="1904.8" y="-537.48125937031489"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ysE-OR-PbS">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="B2M-2c-0Mf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="xgw-gc-FFx">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="cVP-5D-aSd" kind="relationship" relationship="viewControllers" id="W9l-ss-EL7"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dfx-Lf-pwt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="965.60000000000002" y="-537.48125937031489"/>
         </scene>
     </scenes>
 </document>
